@@ -9,7 +9,7 @@ class Stack {
     getData() {
         return axios({
             method: 'GET',
-            url: 'http://localhost:8080/stack'
+            url: 'https://stack-js.herokuapp.com/stack'
         }).then(result => {
             this.data = result.data.data;
             this.size = result.data.size;
@@ -21,7 +21,7 @@ class Stack {
     push(value) {
         return axios({
             method: 'POST',
-            url: 'http://localhost:8080/stack/push',
+            url: 'https://stack-js.herokuapp.com/stack/push',
             headers: {
                 'Content-Type': 'application/json'
             },
@@ -43,7 +43,7 @@ class Stack {
     pop() {
         return axios({
             method: 'GET',
-            url: 'http://localhost:8080/stack/pop'
+            url: 'https://stack-js.herokuapp.com/stack/pop'
         }).then(result => {
             this.data = result.data.data;
             this.size = result.data.size;
@@ -59,7 +59,7 @@ class Stack {
     changeSize(newSize) {
         return axios({
             method: 'POST',
-            url: 'http://localhost:8080/stack/size',
+            url: 'https://stack-js.herokuapp.com/stack/size',
             headers: {
                 'Content-Type': 'application/json'
             },

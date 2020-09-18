@@ -1940,7 +1940,7 @@ var Stack = /*#__PURE__*/function () {
 
       return (0, _axios.default)({
         method: 'GET',
-        url: 'http://localhost:8080/stack'
+        url: 'https://stack-js.herokuapp.com/stack'
       }).then(function (result) {
         _this.data = result.data.data;
         _this.size = result.data.size;
@@ -1955,7 +1955,7 @@ var Stack = /*#__PURE__*/function () {
 
       return (0, _axios.default)({
         method: 'POST',
-        url: 'http://localhost:8080/stack/push',
+        url: 'https://stack-js.herokuapp.com/stack/push',
         headers: {
           'Content-Type': 'application/json'
         },
@@ -1980,7 +1980,7 @@ var Stack = /*#__PURE__*/function () {
 
       return (0, _axios.default)({
         method: 'GET',
-        url: 'http://localhost:8080/stack/pop'
+        url: 'https://stack-js.herokuapp.com/stack/pop'
       }).then(function (result) {
         _this3.data = result.data.data;
         _this3.size = result.data.size;
@@ -1999,7 +1999,7 @@ var Stack = /*#__PURE__*/function () {
 
       return (0, _axios.default)({
         method: 'POST',
-        url: 'http://localhost:8080/stack/size',
+        url: 'https://stack-js.herokuapp.com/stack/size',
         headers: {
           'Content-Type': 'application/json'
         },
@@ -2241,7 +2241,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58111" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59999" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/styles/main.scss">
+    <title>StackJS</title>
+</head>
+
+<body>
+    <main>
+        <!-- LOADER CONTAINER -->
+        <div class="loader-container">
+            <div class="loader">Loading...</div>
+        </div>
+        <div class="container">
+            <h1 class="title">Welcome to StackJS</h1>
+            <h3 class="subtitle">Your stack playground - Push, Pop, Change size of stack</h3>
+            <!-- STACK CONTAINER -->
+            <div class="stack"></div>
+            <!-- STACK SIZE CONTAINER -->
+            <div class="current-size"></div>
+            <div class="pop-operation">
+                <button>POP</button>
+            </div>
+            <div class="push-operation">
+                <input type="text" name="push" id="push">
+                <button>PUSH</button>
+            </div>
+            <div class="size-operation">
+                <input type="text" name="change-size" id="change-size">
+                <button>CHANGE SIZE</button>
+            </div>
+            <!-- ERROR CONTAINER -->
+            <h4 class="error-message"></h4>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>

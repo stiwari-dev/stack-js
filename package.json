@@ -1,0 +1,20 @@
+{
+    "name": "stackjs",
+    "version": "1.0.0",
+    "description": "StackJS",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon app.js",
+        "start:prod": "NODE_ENV=production node app.js"
+    },
+    "engines": {
+        "node": "12.13.1"
+    },
+    "author": "Shubham Tiwari",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "nodemon": "^2.0.3"
+    }
+}

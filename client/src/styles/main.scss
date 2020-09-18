@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import './common';
+
+main {
+    .loader-container {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .title {
+        margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+        background-color: #0f52ba;
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+    
+    .stack {
+        width: 20%;
+        margin: auto;
+        margin-bottom: 0.5rem;
+        display: flex;
+        flex-direction: column;
+
+        span {
+            display: inline-block;
+            border: 2px solid black;
+            border-top: none;
+            padding: 4px;
+        }
+
+        :first-child {
+            border-top: 2px solid black;
+        }
+    }
+
+    .current-size {
+        margin-bottom: 1rem;
+    }
+
+    .push-operation {
+        margin-bottom: 1rem;
+
+        button {
+            @include button(#32cd32);
+        }
+    }
+
+    .pop-operation {
+        margin-bottom: 1rem;
+
+        button {
+            @include button(#e34234);
+        }
+    }
+
+    .size-operation {
+        margin-bottom: 1.5rem;
+
+        button {
+            @include button(#ffa500);
+        }
+    }
+
+    .error-message {
+        width: 50%;
+        margin: auto;
+        background-color: #e34234;
+        color: white;
+    }
+}

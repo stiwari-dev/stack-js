@@ -1,0 +1,19 @@
+{
+    "name": "stack-js-client",
+    "version": "1.0.0",
+    "description": "Stack JS Client (iManage PoC)",
+    "main": "index.js",
+    "scripts": {
+        "dev": "parcel src/index.html",
+        "prod": "parcel build src/index.html"
+    },
+    "author": "Shubham Tiwari",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.20.0",
+        "parcel-bundler": "^1.12.4"
+    },
+    "devDependencies": {
+        "sass": "^1.26.11"
+    }
+}
